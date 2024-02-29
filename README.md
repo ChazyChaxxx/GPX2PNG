@@ -1,7 +1,13 @@
 Manuel d'utilisation - Outil de Génération de Profils d'Altitude à partir de Fichiers GPX
 Cet outil vous permet de générer un profil d'altitude à partir d'un fichier GPX contenant des données GPS d'un parcours. Le profil d'altitude sera représenté sous forme d'image PNG.
 
-Paramètres Réglables
+Installation: 
+- Installer Python 
+- Installer les bibliotèques "Matplotlib", "NumPy" et "gpxpy" et les modules "geopy" et "scipy" ("pip install" puis nom de la bibliothèque dans Powershell)
+- Pour avoir un aperçu des logs, le script peut être lancé dans VisualStudio Code (il faudra alors aussi installer l'addon python et python debugging).
+
+
+Paramètres Réglables:
 L'outil dispose de plusieurs paramètres que vous pouvez ajuster selon vos préférences pour personnaliser le profil d'altitude généré.
 
 1. gpx_file_path (obligatoire)
@@ -38,7 +44,7 @@ Exécutez le script GPX2profil.py en ligne de commande ou via un environnement P
 Le profil d'altitude sera généré sous forme d'image PNG dans le même répertoire que le fichier GPX2profil.py.
 Assurez-vous d'avoir le fichier GPX correctement formaté avec les données GPS de votre parcours. Vous pouvez également ajuster les paramètres pour obtenir le profil d'altitude souhaité.
 
-Avertissements
+Avertissements:
 Assurez-vous que les bibliothèques Matplotlib, NumPy et gpxpy sont installées avant d'exécuter le script.
 Vérifiez que le fichier GPX est correctement formaté et contient les données GPS du parcours.
 Les commentaires dans le fichier GPX doivent contenir les mots "départ" et "réel" pour identifier le point de départ du parcours.
